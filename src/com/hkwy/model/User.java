@@ -22,6 +22,10 @@ public class User {
         this.nickname = nickname;
     }
 
+    public User() {
+
+    }
+
     @Override
     public String toString() {
         return "User{" +

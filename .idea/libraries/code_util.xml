@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="code-util">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/../../ Soft/code-util.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

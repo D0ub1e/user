@@ -19,7 +19,8 @@
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
-    <orderEntry type="library" name="mysql-connector-java-5.1.17-bin" level="project" />
-    <orderEntry type="library" name="Downloads" level="project" />
+    <orderEntry type="library" name="Java EE 6-Java EE 6" level="project" />
+    <orderEntry type="library" name="code-util" level="project" />
+    <orderEntry type="library" name="servlet-api1" level="project" />
   </component>
 </module>

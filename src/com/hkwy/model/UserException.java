@@ -3,23 +3,20 @@ package com.hkwy.model;
 /**
  * Created by double on 16-12-14.
  */
-public class UserException extends RuntimeException{
+public class UserException extends RuntimeException {
     public UserException() {
+        super();
     }
 
-    public UserException(String message) {
-        super(message);
+    public UserException(String s) {
+        super(s);
     }
 
-    public UserException(String message, Throwable cause) {
-        super(message, cause);
+    public UserException(String s, Throwable throwable) {
+        super(s, throwable);
     }
 
-    public UserException(Throwable cause) {
-        super(cause);
-    }
-
-    public UserException(String message, Throwable cause, boolean enableSuppression, boolean writableStackTrace) {
-        super(message, cause, enableSuppression, writableStackTrace);
+    public UserException(Throwable throwable) {
+        super(throwable);
     }
 }
