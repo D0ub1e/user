@@ -18,9 +18,7 @@ public class UserDao {
         String sql ="insert into t_user values(null,?,?,?)";
         String sqlCount= "select conut(*) from t_user where username=?";
         con = DBUtil.getConnection();
-        try {
 
-        }
 
 
 
