@@ -8,6 +8,25 @@ public class User {
     private String username;
     private String password;
     private String nickname;
+    private int role;
+
+    public int getRole() {
+        return role;
+    }
+
+    public void setRole(int role) {
+        this.role = role;
+    }
+
+    public int getStatus() {
+        return status;
+    }
+
+    public void setStatus(int status) {
+        this.status = status;
+    }
+
+    private int status;
 
     public User(String username, String password, String nickname) {
         this.username = username;

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataSource name="MySQL - user@localhost">
+  <database-model serializer="dbm" rdbms="MYSQL" format-version="2.6">
+    <schema id="1" name="user">
+      <visible>1</visible>
+    </schema>
+    <schema id="2" name="bookshop"/>
+    <schema id="3" name="db_database28"/>
+    <schema id="4" name="information_schema"/>
+    <schema id="5" name="myblog"/>
+    <schema id="6" name="mysql"/>
+    <schema id="7" name="performance_schema"/>
+    <schema id="8" name="qq"/>
+    <schema id="9" name="sample"/>
+    <schema id="10" name="sys"/>
+    <table id="11" parent="1" name="t_user"/>
+    <column id="12" parent="11" name="id">
+      <mandatory>1</mandatory>
+      <data-type>int(45)|0</data-type>
+    </column>
+    <column id="13" parent="11" name="username">
+      <mandatory>1</mandatory>
+      <data-type>varchar(45)|0</data-type>
+    </column>
+    <column id="14" parent="11" name="password">
+      <mandatory>1</mandatory>
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="15" parent="11" name="nickname">
+      <mandatory>1</mandatory>
+      <data-type>varchar(45)|0</data-type>
+    </column>
+    <column id="16" parent="11" name="status">
+      <data-type>int(1)|0</data-type>
+    </column>
+    <column id="17" parent="11" name="role">
+      <mandatory>1</mandatory>
+      <data-type>int(1)|0</data-type>
+    </column>
+    <key id="18" parent="11" name="PRIMARY">
+      <columns>id</columns>
+      <primary>1</primary>
+    </key>
+  </database-model>
+</dataSource>
