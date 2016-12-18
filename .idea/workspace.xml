@@ -2,12 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e265a964-b2f1-4f79-a49f-f6a47af4a0c5" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/hkwy/model/Page.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/hkwy/model/SystemContext.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/encodings.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/hkwy/filter/AdminCheckFilter.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/hkwy/filter/SystemContextFilter.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/hkwy/dao/IUserDao.java" afterPath="$PROJECT_DIR$/src/com/hkwy/dao/IUserDao.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/hkwy/model/User.java" afterPath="$PROJECT_DIR$/src/com/hkwy/model/User.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/hkwy/service/IUserserver.java" afterPath="$PROJECT_DIR$/src/com/hkwy/service/IUserserver.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/hkwy/service/impl/Userserver.java" afterPath="$PROJECT_DIR$/src/com/hkwy/service/impl/Userserver.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/hkwy/servlet/UserServlet.java" afterPath="$PROJECT_DIR$/src/com/hkwy/servlet/UserServlet.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/WEB-INF/web.xml" afterPath="$PROJECT_DIR$/web/WEB-INF/web.xml" />
     </list>
     <ignored path="user.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -30,30 +32,6 @@
     <option name="SHOW_TABLE_DETAILS" value="true" />
     <option name="SHOW_EMPTY_GROUPS" value="false" />
     <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
-    <PATH>
-      <PATH_ELEMENT>
-        <option name="myItemId" />
-        <option name="myItemType" value="com.intellij.database.view.DatabaseStructure$Root" />
-      </PATH_ELEMENT>
-      <PATH_ELEMENT>
-        <option name="myItemId" value="MySQL - user@localhost" />
-        <option name="myItemType" value="com.intellij.database.view.DbNodeDescriptor" />
-      </PATH_ELEMENT>
-    </PATH>
-    <PATH>
-      <PATH_ELEMENT>
-        <option name="myItemId" />
-        <option name="myItemType" value="com.intellij.database.view.DatabaseStructure$Root" />
-      </PATH_ELEMENT>
-      <PATH_ELEMENT>
-        <option name="myItemId" value="MySQL - user@localhost" />
-        <option name="myItemType" value="com.intellij.database.view.DbNodeDescriptor" />
-      </PATH_ELEMENT>
-      <PATH_ELEMENT>
-        <option name="myItemId" value="t_user" />
-        <option name="myItemType" value="com.intellij.database.view.DbNodeDescriptor" />
-      </PATH_ELEMENT>
-    </PATH>
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FavoritesManager">
@@ -61,116 +39,22 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="UserDao.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/hkwy/dao/impl/UserDao.java">
+      <file leaf-file-name="web.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/WEB-INF/web.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="22">
-              <caret line="17" column="13" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <marker date="1481739689000" expanded="true" signature="559:596" ph="insert into t_user... " />
-                <marker date="1481739689000" expanded="true" signature="625:669" ph="select conut... t_user" />
-                <marker date="1481739689000" expanded="true" signature="1550:1579" ph="delete from " />
-                <marker date="1481739689000" expanded="true" signature="2052:2102" ph="update t_use... " />
-                <marker date="1481739689000" expanded="true" signature="2728:2760" ph="select * fro... t_user" />
-                <marker date="1481739689000" expanded="true" signature="3715:3735" ph="select * for... " />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="IUserDao.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/hkwy/dao/IUserDao.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="308">
-              <caret line="16" column="10" selection-start-line="16" selection-start-column="10" selection-end-line="16" selection-end-column="10" />
+            <state relative-caret-position="616">
+              <caret line="28" column="33" selection-start-line="28" selection-start-column="33" selection-end-line="28" selection-end-column="33" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Page.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/hkwy/model/Page.java">
+      <file leaf-file-name="AdminCheckFilter.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/hkwy/filter/AdminCheckFilter.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="220">
-              <caret line="12" column="19" selection-start-line="12" selection-start-column="19" selection-end-line="12" selection-end-column="19" />
-              <folding>
-                <element signature="e#284#285#0" expanded="true" />
-                <element signature="e#316#317#0" expanded="true" />
-                <element signature="e#363#364#0" expanded="true" />
-                <element signature="e#405#406#0" expanded="true" />
-                <element signature="e#437#438#0" expanded="true" />
-                <element signature="e#468#469#0" expanded="true" />
-                <element signature="e#513#514#0" expanded="true" />
-                <element signature="e#553#554#0" expanded="true" />
-                <element signature="e#586#587#0" expanded="true" />
-                <element signature="e#618#619#0" expanded="true" />
-                <element signature="e#665#666#0" expanded="true" />
-                <element signature="e#707#708#0" expanded="true" />
-                <element signature="e#742#743#0" expanded="true" />
-                <element signature="e#776#777#0" expanded="true" />
-                <element signature="e#827#828#0" expanded="true" />
-                <element signature="e#873#874#0" expanded="true" />
-                <element signature="e#906#907#0" expanded="true" />
-                <element signature="e#934#935#0" expanded="true" />
-                <element signature="e#977#978#0" expanded="true" />
-                <element signature="e#1011#1012#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="SystemContext.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/com/hkwy/model/SystemContext.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="220">
-              <caret line="10" column="22" selection-start-line="10" selection-start-column="22" selection-end-line="10" selection-end-column="22" />
-              <folding>
-                <element signature="e#165#174#0" expanded="true" />
-                <element signature="e#245#254#0" expanded="true" />
-                <element signature="e#366#367#0" expanded="true" />
-                <element signature="e#397#398#0" expanded="true" />
-                <element signature="e#466#467#0" expanded="true" />
-                <element signature="e#515#516#0" expanded="true" />
-                <element signature="e#572#573#0" expanded="true" />
-                <element signature="e#604#605#0" expanded="true" />
-                <element signature="e#675#676#0" expanded="true" />
-                <element signature="e#726#727#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="User.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/hkwy/model/User.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="308">
-              <caret line="15" column="0" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
-              <folding>
-                <element signature="e#242#243#0" expanded="true" />
-                <element signature="e#269#270#0" expanded="true" />
-                <element signature="e#306#307#0" expanded="true" />
-                <element signature="e#338#339#0" expanded="true" />
-                <element signature="e#368#369#0" expanded="true" />
-                <element signature="e#397#398#0" expanded="true" />
-                <element signature="e#438#439#0" expanded="true" />
-                <element signature="e#474#475#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="user.t_user" pinned="false" current-in-tab="false">
-        <entry file="dbDummy://dbtable:/ce34105d/74c772a7-2f02-43f5-a9d8-3f383d6d57df/user.t_user">
-          <provider editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state relative-caret-position="441">
+              <caret line="27" column="19" selection-start-line="27" selection-start-column="19" selection-end-line="27" selection-end-column="19" />
               <folding />
-            </state>
-          </provider>
-          <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-            <state>
-              <filtering enabled="true" />
             </state>
           </provider>
         </entry>
@@ -178,32 +62,34 @@
       <file leaf-file-name="Userserver.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/hkwy/service/impl/Userserver.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="220">
-              <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+            <state relative-caret-position="397">
+              <caret line="46" column="13" selection-start-line="46" selection-start-column="13" selection-end-line="46" selection-end-column="13" />
               <folding>
-                <element signature="imports" expanded="true" />
+                <element signature="e#2033#2034#0" expanded="true" />
+                <element signature="e#2071#2072#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="console.sql" pinned="false" current-in-tab="false">
-        <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/74c772a7-2f02-43f5-a9d8-3f383d6d57df/console.sql">
+      <file leaf-file-name="UserServlet.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/com/hkwy/servlet/UserServlet.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state relative-caret-position="309">
+              <caret line="85" column="3" selection-start-line="85" selection-start-column="3" selection-end-line="85" selection-end-column="3" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="UserServlet.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/hkwy/servlet/UserServlet.java">
+      <file leaf-file-name="SystemContext.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/hkwy/model/SystemContext.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="750">
-              <caret line="86" column="41" selection-start-line="86" selection-start-column="41" selection-end-line="86" selection-end-column="41" />
+            <state relative-caret-position="242">
+              <caret line="11" column="11" selection-start-line="11" selection-start-column="11" selection-end-line="11" selection-end-column="11" />
               <folding>
-                <element signature="imports" expanded="true" />
+                <element signature="e#165#174#0" expanded="true" />
+                <element signature="e#245#254#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -212,11 +98,52 @@
       <file leaf-file-name="IUserserver.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/hkwy/service/IUserserver.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="242">
-              <caret line="13" column="10" selection-start-line="13" selection-start-column="10" selection-end-line="13" selection-end-column="10" />
+            <state relative-caret-position="330">
+              <caret line="18" column="30" selection-start-line="18" selection-start-column="30" selection-end-line="18" selection-end-column="30" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="User.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/hkwy/model/User.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="286">
+              <caret line="15" column="0" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="UserException.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/hkwy/model/UserException.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="154">
+              <caret line="7" column="14" selection-start-line="7" selection-start-column="14" selection-end-line="7" selection-end-column="14" />
               <folding>
-                <element signature="imports" expanded="true" />
+                <element signature="e#148#149#0" expanded="true" />
+                <element signature="e#171#172#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CharsetEncodingFilter.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/hkwy/filter/CharsetEncodingFilter.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="330">
+              <caret line="16" column="0" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="SystemContextFilter.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/hkwy/filter/SystemContextFilter.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="463">
+              <caret line="31" column="9" selection-start-line="31" selection-start-column="9" selection-end-line="31" selection-end-column="9" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -233,6 +160,11 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="PREVIOUS_COMMIT_AUTHORS">
+      <list>
+        <option value="double &lt;bud2@qq.com&gt;" />
+      </list>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <option name="PUSH_TAGS">
       <GitPushTagMode />
@@ -255,24 +187,26 @@
         <option value="$PROJECT_DIR$/src/com/hkwy/dao/impl/IUserService.java" />
         <option value="$PROJECT_DIR$/src/com/hkwy/dao/IUserService.java" />
         <option value="$PROJECT_DIR$/src/com/hkwy/servlet/IUserserver.java" />
-        <option value="$PROJECT_DIR$/web/WEB-INF/web.xml" />
         <option value="$PROJECT_DIR$/src/com/hkwy/dao/UserDao.java" />
         <option value="$PROJECT_DIR$/web/WEB-INF/jsp/user/uodate.jsp" />
         <option value="$PROJECT_DIR$/src/com/hkwy/model/UserException.java" />
         <option value="$PROJECT_DIR$/src/com/hkwy/service/UserService.java" />
         <option value="$PROJECT_DIR$/src/com/hkwy/filter/CharsetEncodingFilter.java" />
-        <option value="$PROJECT_DIR$/src/com/hkwy/servlet/UserServlet.java" />
         <option value="$PROJECT_DIR$/web/WEB-INF/jsp/user/add.jsp" />
         <option value="$PROJECT_DIR$/web/WEB-INF/jsp/user/update.jsp" />
         <option value="$PROJECT_DIR$/src/com/hkwy/service/Userserver.java" />
-        <option value="$PROJECT_DIR$/src/com/hkwy/service/IUserserver.java" />
-        <option value="$PROJECT_DIR$/src/com/hkwy/service/impl/Userserver.java" />
-        <option value="$PROJECT_DIR$/src/com/hkwy/dao/impl/UserDao.java" />
         <option value="$PROJECT_DIR$/web/WEB-INF/jsp/user/list.jsp" />
         <option value="$PROJECT_DIR$/src/com/hkwy/model/User.java" />
-        <option value="$PROJECT_DIR$/src/com/hkwy/dao/IUserDao.java" />
         <option value="$PROJECT_DIR$/src/com/hkwy/model/Page.java" />
         <option value="$PROJECT_DIR$/src/com/hkwy/model/SystemContext.java" />
+        <option value="$PROJECT_DIR$/src/com/hkwy/dao/IUserDao.java" />
+        <option value="$PROJECT_DIR$/src/com/hkwy/dao/impl/UserDao.java" />
+        <option value="$PROJECT_DIR$/src/com/hkwy/filter/AdminCheckFilter.java" />
+        <option value="$PROJECT_DIR$/web/WEB-INF/web.xml" />
+        <option value="$PROJECT_DIR$/src/com/hkwy/filter/SystemContextFilter.java" />
+        <option value="$PROJECT_DIR$/src/com/hkwy/service/IUserserver.java" />
+        <option value="$PROJECT_DIR$/src/com/hkwy/service/impl/Userserver.java" />
+        <option value="$PROJECT_DIR$/src/com/hkwy/servlet/UserServlet.java" />
       </list>
     </option>
   </component>
@@ -347,266 +281,7 @@
       <pane id="PackagesPane" />
       <pane id="Scope" />
       <pane id="ProjectPane">
-        <subPane>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="user" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="External Libraries" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ExternalLibrariesNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="user" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="user" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="user" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="user" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="web" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="user" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="user" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="web" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="WEB-INF" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="user" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="user" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="web" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="WEB-INF" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="jsp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="user" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="user" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="user" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="hkwy" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="util" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="user" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="user" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="hkwy" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="user" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="user" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="hkwy" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="service" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="user" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="user" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="hkwy" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="service" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="impl" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="user" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="user" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="hkwy" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="model" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="user" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="user" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="hkwy" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="filter" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="user" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="user" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="hkwy" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="dao" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="user" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="user" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="hkwy" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="dao" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="impl" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-        </subPane>
+        <subPane />
       </pane>
       <pane id="Scratches" />
     </panes>
@@ -618,11 +293,11 @@
     <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.16071428" />
-    <property name="settings.editor.selected.configurable" value="settings.github" />
+    <property name="settings.editor.selected.configurable" value="preferences.fileTypes" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
     <property name="SearchEverywhereHistoryKey" value="we&#9;FILE&#9;file:///home/double/IdeaProjects/user/web/WEB-INF/web.xml" />
-    <property name="FullScreen" value="true" />
     <property name="com.intellij.database.dataSource.DataSourceTemplate" value="MySQL" />
+    <property name="FullScreen" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -1156,12 +831,27 @@
       <workItem from="1481721837737" duration="1428000" />
       <workItem from="1481724103956" duration="15199000" />
       <workItem from="1481904078810" duration="256000" />
-      <workItem from="1481965638588" duration="1572000" />
+      <workItem from="1481965638588" duration="12023000" />
     </task>
+    <task id="LOCAL-00001" summary="完成model">
+      <created>1481967690537</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1481967690537</updated>
+    </task>
+    <task id="LOCAL-00002" summary="完成dao">
+      <created>1482028620936</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1482028620936</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="29398000" />
+    <option name="totallyTimeSpent" value="39849000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
@@ -1175,14 +865,14 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32916147" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32891566" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24267292" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24861111" sideWeight="0.69093406" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24861111" sideWeight="0.30906594" order="4" side_tool="true" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19791667" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.21173105" sideWeight="0.6843374" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.21173105" sideWeight="0.31566265" order="4" side_tool="true" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.19742489" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -1197,6 +887,37 @@
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
     </layout>
+    <layout-to-restore>
+      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
+      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32916147" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Inspection Results" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32916147" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.19742489" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3282532" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32891566" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24267292" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21173105" sideWeight="0.6843374" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21173105" sideWeight="0.31566265" order="4" side_tool="true" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="true" content_ui="tabs" />
+    </layout-to-restore>
   </component>
   <component name="Vcs.Log.UiProperties">
     <option name="RECENTLY_FILTERED_USER_GROUPS">
@@ -1209,16 +930,22 @@
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="完成model" />
+    <MESSAGE value="完成dao" />
+    <option name="LAST_COMMIT_MESSAGE" value="完成dao" />
+  </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/src/com/hkwy/dao/IUserDao.java</url>
-          <line>18</line>
+          <line>19</line>
           <properties class="com.hkwy.dao.IUserDao" method="pages" />
+          <option name="timeStamp" value="4" />
         </line-breakpoint>
       </breakpoints>
-      <option name="time" value="1" />
+      <option name="time" value="5" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -1227,36 +954,24 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/web/WEB-INF/web.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="5" column="6" selection-start-line="5" selection-start-column="6" selection-end-line="5" selection-end-column="6" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/hkwy/servlet/UserServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="36">
-          <caret line="7" column="27" selection-start-line="7" selection-start-column="27" selection-end-line="7" selection-end-column="27" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/hkwy/dao/impl/UserDao.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="270">
           <caret line="20" column="0" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-            <marker date="1481739689000" expanded="true" signature="559:596" ph="insert into t_user... " />
-            <marker date="1481739689000" expanded="true" signature="625:669" ph="select conut... t_user" />
-            <marker date="1481739689000" expanded="true" signature="1550:1579" ph="delete from " />
-            <marker date="1481739689000" expanded="true" signature="2052:2102" ph="update t_use... " />
-            <marker date="1481739689000" expanded="true" signature="2728:2760" ph="select * fro... t_user" />
-            <marker date="1481739689000" expanded="true" signature="3715:3735" ph="select * for... " />
+            <element signature="e#6831#6837#0" expanded="true" />
+            <element signature="e#6876#6882#0" expanded="true" />
+            <marker date="1482028592000" expanded="true" signature="624:661" ph="insert into t_user... " />
+            <marker date="1482028592000" expanded="true" signature="690:734" ph="select conut... t_user" />
+            <marker date="1482028592000" expanded="true" signature="1615:1644" ph="delete from " />
+            <marker date="1482028592000" expanded="true" signature="2117:2167" ph="update t_use... " />
+            <marker date="1482028592000" expanded="true" signature="2793:2825" ph="select * fro... t_user" />
+            <marker date="1482028592000" expanded="true" signature="3780:3800" ph="select * for... " />
+            <marker date="1482028592000" expanded="true" signature="4817:4855" ph="select * fro... t_user" />
+            <marker date="1482028592000" expanded="true" signature="5990:6028" ph="update t_use... " />
+            <marker date="1482028592000" expanded="true" signature="6701:6731" ph="select * fro... t_user" />
+            <marker date="1482028592000" expanded="true" signature="6761:6788" ph="select count... t_user" />
           </folding>
         </state>
       </provider>
@@ -1273,7 +988,7 @@
         <state relative-caret-position="450">
           <caret line="27" column="5" selection-start-line="27" selection-start-column="5" selection-end-line="27" selection-end-column="5" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1314,7 +1029,7 @@
         <state relative-caret-position="36">
           <caret line="7" column="27" selection-start-line="7" selection-start-column="27" selection-end-line="7" selection-end-column="27" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1325,12 +1040,18 @@
           <caret line="20" column="0" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-            <marker date="1481739689000" expanded="true" signature="559:596" ph="insert into t_user... " />
-            <marker date="1481739689000" expanded="true" signature="625:669" ph="select conut... t_user" />
-            <marker date="1481739689000" expanded="true" signature="1550:1579" ph="delete from " />
-            <marker date="1481739689000" expanded="true" signature="2052:2102" ph="update t_use... " />
-            <marker date="1481739689000" expanded="true" signature="2728:2760" ph="select * fro... t_user" />
-            <marker date="1481739689000" expanded="true" signature="3715:3735" ph="select * for... " />
+            <element signature="e#6831#6837#0" expanded="true" />
+            <element signature="e#6876#6882#0" expanded="true" />
+            <marker date="1482028592000" expanded="true" signature="624:661" ph="insert into t_user... " />
+            <marker date="1482028592000" expanded="true" signature="690:734" ph="select conut... t_user" />
+            <marker date="1482028592000" expanded="true" signature="1615:1644" ph="delete from " />
+            <marker date="1482028592000" expanded="true" signature="2117:2167" ph="update t_use... " />
+            <marker date="1482028592000" expanded="true" signature="2793:2825" ph="select * fro... t_user" />
+            <marker date="1482028592000" expanded="true" signature="3780:3800" ph="select * for... " />
+            <marker date="1482028592000" expanded="true" signature="4817:4855" ph="select * fro... t_user" />
+            <marker date="1482028592000" expanded="true" signature="5990:6028" ph="update t_use... " />
+            <marker date="1482028592000" expanded="true" signature="6701:6731" ph="select * fro... t_user" />
+            <marker date="1482028592000" expanded="true" signature="6761:6788" ph="select count... t_user" />
           </folding>
         </state>
       </provider>
@@ -1347,7 +1068,7 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1381,12 +1102,18 @@
           <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-            <marker date="1481739689000" expanded="true" signature="559:596" ph="insert into t_user... " />
-            <marker date="1481739689000" expanded="true" signature="625:669" ph="select conut... t_user" />
-            <marker date="1481739689000" expanded="true" signature="1550:1579" ph="delete from " />
-            <marker date="1481739689000" expanded="true" signature="2052:2102" ph="update t_use... " />
-            <marker date="1481739689000" expanded="true" signature="2728:2760" ph="select * fro... t_user" />
-            <marker date="1481739689000" expanded="true" signature="3715:3735" ph="select * for... " />
+            <element signature="e#6831#6837#0" expanded="true" />
+            <element signature="e#6876#6882#0" expanded="true" />
+            <marker date="1482028592000" expanded="true" signature="624:661" ph="insert into t_user... " />
+            <marker date="1482028592000" expanded="true" signature="690:734" ph="select conut... t_user" />
+            <marker date="1482028592000" expanded="true" signature="1615:1644" ph="delete from " />
+            <marker date="1482028592000" expanded="true" signature="2117:2167" ph="update t_use... " />
+            <marker date="1482028592000" expanded="true" signature="2793:2825" ph="select * fro... t_user" />
+            <marker date="1482028592000" expanded="true" signature="3780:3800" ph="select * for... " />
+            <marker date="1482028592000" expanded="true" signature="4817:4855" ph="select * fro... t_user" />
+            <marker date="1482028592000" expanded="true" signature="5990:6028" ph="update t_use... " />
+            <marker date="1482028592000" expanded="true" signature="6701:6731" ph="select * fro... t_user" />
+            <marker date="1482028592000" expanded="true" signature="6761:6788" ph="select count... t_user" />
           </folding>
         </state>
       </provider>
@@ -1428,12 +1155,18 @@
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-            <marker date="1481739689000" expanded="true" signature="559:596" ph="insert into t_user... " />
-            <marker date="1481739689000" expanded="true" signature="625:669" ph="select conut... t_user" />
-            <marker date="1481739689000" expanded="true" signature="1550:1579" ph="delete from " />
-            <marker date="1481739689000" expanded="true" signature="2052:2102" ph="update t_use... " />
-            <marker date="1481739689000" expanded="true" signature="2728:2760" ph="select * fro... t_user" />
-            <marker date="1481739689000" expanded="true" signature="3715:3735" ph="select * for... " />
+            <element signature="e#6831#6837#0" expanded="true" />
+            <element signature="e#6876#6882#0" expanded="true" />
+            <marker date="1482028592000" expanded="true" signature="624:661" ph="insert into t_user... " />
+            <marker date="1482028592000" expanded="true" signature="690:734" ph="select conut... t_user" />
+            <marker date="1482028592000" expanded="true" signature="1615:1644" ph="delete from " />
+            <marker date="1482028592000" expanded="true" signature="2117:2167" ph="update t_use... " />
+            <marker date="1482028592000" expanded="true" signature="2793:2825" ph="select * fro... t_user" />
+            <marker date="1482028592000" expanded="true" signature="3780:3800" ph="select * for... " />
+            <marker date="1482028592000" expanded="true" signature="4817:4855" ph="select * fro... t_user" />
+            <marker date="1482028592000" expanded="true" signature="5990:6028" ph="update t_use... " />
+            <marker date="1482028592000" expanded="true" signature="6701:6731" ph="select * fro... t_user" />
+            <marker date="1482028592000" expanded="true" signature="6761:6788" ph="select count... t_user" />
           </folding>
         </state>
       </provider>
@@ -1459,12 +1192,18 @@
           <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
           <folding>
             <element signature="imports" expanded="true" />
-            <marker date="1481739689000" expanded="true" signature="559:596" ph="insert into t_user... " />
-            <marker date="1481739689000" expanded="true" signature="625:669" ph="select conut... t_user" />
-            <marker date="1481739689000" expanded="true" signature="1550:1579" ph="delete from " />
-            <marker date="1481739689000" expanded="true" signature="2052:2102" ph="update t_use... " />
-            <marker date="1481739689000" expanded="true" signature="2728:2760" ph="select * fro... t_user" />
-            <marker date="1481739689000" expanded="true" signature="3715:3735" ph="select * for... " />
+            <element signature="e#6831#6837#0" expanded="true" />
+            <element signature="e#6876#6882#0" expanded="true" />
+            <marker date="1482028592000" expanded="true" signature="624:661" ph="insert into t_user... " />
+            <marker date="1482028592000" expanded="true" signature="690:734" ph="select conut... t_user" />
+            <marker date="1482028592000" expanded="true" signature="1615:1644" ph="delete from " />
+            <marker date="1482028592000" expanded="true" signature="2117:2167" ph="update t_use... " />
+            <marker date="1482028592000" expanded="true" signature="2793:2825" ph="select * fro... t_user" />
+            <marker date="1482028592000" expanded="true" signature="3780:3800" ph="select * for... " />
+            <marker date="1482028592000" expanded="true" signature="4817:4855" ph="select * fro... t_user" />
+            <marker date="1482028592000" expanded="true" signature="5990:6028" ph="update t_use... " />
+            <marker date="1482028592000" expanded="true" signature="6701:6731" ph="select * fro... t_user" />
+            <marker date="1482028592000" expanded="true" signature="6761:6788" ph="select count... t_user" />
           </folding>
         </state>
       </provider>
@@ -1475,7 +1214,7 @@
         <state relative-caret-position="216">
           <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1489,7 +1228,7 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1499,13 +1238,6 @@
         <state relative-caret-position="66">
           <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/hkwy/model/UserException.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="154">
-          <caret line="7" column="14" selection-start-line="7" selection-start-column="14" selection-end-line="7" selection-end-column="14" />
         </state>
       </provider>
     </entry>
@@ -1533,14 +1265,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/WEB-INF/web.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="154">
-          <caret line="7" column="36" selection-start-line="7" selection-start-column="36" selection-end-line="7" selection-end-column="36" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/web/WEB-INF/jsp/user/list.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="33">
@@ -1549,67 +1273,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/hkwy/filter/CharsetEncodingFilter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="16" column="0" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/hkwy/service/IUserserver.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="242">
-          <caret line="13" column="10" selection-start-line="13" selection-start-column="10" selection-end-line="13" selection-end-column="10" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/hkwy/servlet/UserServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="750">
-          <caret line="86" column="41" selection-start-line="86" selection-start-column="41" selection-end-line="86" selection-end-column="41" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/74c772a7-2f02-43f5-a9d8-3f383d6d57df/console.sql">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/hkwy/service/impl/Userserver.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="220">
-          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/hkwy/dao/impl/UserDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="22">
-          <caret line="17" column="13" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <marker date="1481739689000" expanded="true" signature="559:596" ph="insert into t_user... " />
-            <marker date="1481739689000" expanded="true" signature="625:669" ph="select conut... t_user" />
-            <marker date="1481739689000" expanded="true" signature="1550:1579" ph="delete from " />
-            <marker date="1481739689000" expanded="true" signature="2052:2102" ph="update t_use... " />
-            <marker date="1481739689000" expanded="true" signature="2728:2760" ph="select * fro... t_user" />
-            <marker date="1481739689000" expanded="true" signature="3715:3735" ph="select * for... " />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1626,28 +1294,35 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/hkwy/model/User.java">
+    <entry file="file://$PROJECT_DIR$/src/com/hkwy/dao/IUserDao.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="308">
-          <caret line="15" column="0" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+        <state relative-caret-position="352">
+          <caret line="16" column="38" selection-start-line="16" selection-start-column="38" selection-end-line="16" selection-end-column="38" />
           <folding>
-            <element signature="e#242#243#0" expanded="true" />
-            <element signature="e#269#270#0" expanded="true" />
-            <element signature="e#306#307#0" expanded="true" />
-            <element signature="e#338#339#0" expanded="true" />
-            <element signature="e#368#369#0" expanded="true" />
-            <element signature="e#397#398#0" expanded="true" />
-            <element signature="e#438#439#0" expanded="true" />
-            <element signature="e#474#475#0" expanded="true" />
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/hkwy/dao/IUserDao.java">
+    <entry file="file://$PROJECT_DIR$/src/com/hkwy/dao/impl/UserDao.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="308">
-          <caret line="16" column="10" selection-start-line="16" selection-start-column="10" selection-end-line="16" selection-end-column="10" />
-          <folding />
+        <state relative-caret-position="5786">
+          <caret line="263" column="30" selection-start-line="263" selection-start-column="30" selection-end-line="263" selection-end-column="30" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#6831#6837#0" expanded="true" />
+            <element signature="e#6876#6882#0" expanded="true" />
+            <marker date="1482028592000" expanded="true" signature="624:661" ph="insert into t_user... " />
+            <marker date="1482028592000" expanded="true" signature="690:734" ph="select conut... t_user" />
+            <marker date="1482028592000" expanded="true" signature="1615:1644" ph="delete from " />
+            <marker date="1482028592000" expanded="true" signature="2117:2167" ph="update t_use... " />
+            <marker date="1482028592000" expanded="true" signature="2793:2825" ph="select * fro... t_user" />
+            <marker date="1482028592000" expanded="true" signature="3780:3800" ph="select * for... " />
+            <marker date="1482028592000" expanded="true" signature="4817:4855" ph="select * fro... t_user" />
+            <marker date="1482028592000" expanded="true" signature="5990:6028" ph="update t_use... " />
+            <marker date="1482028592000" expanded="true" signature="6701:6731" ph="select * fro... t_user" />
+            <marker date="1482028592000" expanded="true" signature="6761:6788" ph="select count... t_user" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1655,47 +1330,96 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="220">
           <caret line="12" column="19" selection-start-line="12" selection-start-column="19" selection-end-line="12" selection-end-column="19" />
-          <folding>
-            <element signature="e#284#285#0" expanded="true" />
-            <element signature="e#316#317#0" expanded="true" />
-            <element signature="e#363#364#0" expanded="true" />
-            <element signature="e#405#406#0" expanded="true" />
-            <element signature="e#437#438#0" expanded="true" />
-            <element signature="e#468#469#0" expanded="true" />
-            <element signature="e#513#514#0" expanded="true" />
-            <element signature="e#553#554#0" expanded="true" />
-            <element signature="e#586#587#0" expanded="true" />
-            <element signature="e#618#619#0" expanded="true" />
-            <element signature="e#665#666#0" expanded="true" />
-            <element signature="e#707#708#0" expanded="true" />
-            <element signature="e#742#743#0" expanded="true" />
-            <element signature="e#776#777#0" expanded="true" />
-            <element signature="e#827#828#0" expanded="true" />
-            <element signature="e#873#874#0" expanded="true" />
-            <element signature="e#906#907#0" expanded="true" />
-            <element signature="e#934#935#0" expanded="true" />
-            <element signature="e#977#978#0" expanded="true" />
-            <element signature="e#1011#1012#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/hkwy/model/SystemContext.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="220">
-          <caret line="10" column="22" selection-start-line="10" selection-start-column="22" selection-end-line="10" selection-end-column="22" />
+        <state relative-caret-position="242">
+          <caret line="11" column="11" selection-start-line="11" selection-start-column="11" selection-end-line="11" selection-end-column="11" />
           <folding>
             <element signature="e#165#174#0" expanded="true" />
             <element signature="e#245#254#0" expanded="true" />
-            <element signature="e#366#367#0" expanded="true" />
-            <element signature="e#397#398#0" expanded="true" />
-            <element signature="e#466#467#0" expanded="true" />
-            <element signature="e#515#516#0" expanded="true" />
-            <element signature="e#572#573#0" expanded="true" />
-            <element signature="e#604#605#0" expanded="true" />
-            <element signature="e#675#676#0" expanded="true" />
-            <element signature="e#726#727#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/hkwy/model/User.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="286">
+          <caret line="15" column="0" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/hkwy/model/UserException.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="154">
+          <caret line="7" column="14" selection-start-line="7" selection-start-column="14" selection-end-line="7" selection-end-column="14" />
+          <folding>
+            <element signature="e#148#149#0" expanded="true" />
+            <element signature="e#171#172#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/WEB-INF/web.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="616">
+          <caret line="28" column="33" selection-start-line="28" selection-start-column="33" selection-end-line="28" selection-end-column="33" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/hkwy/filter/SystemContextFilter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="463">
+          <caret line="31" column="9" selection-start-line="31" selection-start-column="9" selection-end-line="31" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/hkwy/filter/CharsetEncodingFilter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="16" column="0" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/hkwy/service/IUserserver.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="18" column="30" selection-start-line="18" selection-start-column="30" selection-end-line="18" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/hkwy/filter/AdminCheckFilter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="441">
+          <caret line="27" column="19" selection-start-line="27" selection-start-column="19" selection-end-line="27" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/hkwy/service/impl/Userserver.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="397">
+          <caret line="46" column="13" selection-start-line="46" selection-start-column="13" selection-end-line="46" selection-end-column="13" />
+          <folding>
+            <element signature="e#2033#2034#0" expanded="true" />
+            <element signature="e#2071#2072#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/hkwy/servlet/UserServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="309">
+          <caret line="85" column="3" selection-start-line="85" selection-start-column="3" selection-end-line="85" selection-end-column="3" />
+          <folding />
         </state>
       </provider>
     </entry>
