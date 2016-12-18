@@ -1,6 +1,8 @@
 package com.hkwy.dao.impl;
 
 import com.hkwy.dao.IUserDao;
+import com.hkwy.model.Page;
+import com.hkwy.model.SystemContext;
 import com.hkwy.model.User;
 import com.hkwy.model.UserException;
 import com.hkwy.util.DBUtil;
@@ -150,4 +152,117 @@ public class UserDao implements IUserDao {
        }
        return  users;
    }
+
+    @Override
+    public User login(String username) {
+        Connection connection = null;
+        PreparedStatement preparedStatement =null;
+        ResultSet resultSet =null;
+        String sql = "select * from t_user where username =?";
+        User user =null;
+        try {
+            connection = DBUtil.getConnection();
+            preparedStatement = connection.prepareStatement(sql);
+            preparedStatement.setString(1,username);
+            resultSet =preparedStatement.executeQuery();
+            while (resultSet.next()){
+                user = new User();
+                user.setId(resultSet.getInt("id"));
+                user.setUsername(resultSet.getString("username"));
+                user.setPassword(resultSet.getString("password"));
+                user.setNickname(resultSet.getString("nickname"));
+                user.setRole(resultSet.getInt("role"));
+                user.setStatus(resultSet.getInt("status"));
+
+            }
+
+
+        } catch (Exception e) {
+            e.printStackTrace();
+        }finally {
+            DBUtil.close(resultSet);
+            DBUtil.close(preparedStatement);
+            DBUtil.close(connection);
+        }
+        return user;
+    }
+
+    @Override
+    public void updatestatus(User user) {
+        Connection connection = null;
+        PreparedStatement preparedStatement =null;
+        String sql = "update t_user set status=? where id= ?";
+        try {
+            connection = DBUtil.getConnection();
+            preparedStatement = connection.prepareStatement(sql);
+            preparedStatement.setInt(1,user.getStatus());
+            preparedStatement.setInt(2,user.getRole());
+            preparedStatement.executeUpdate();
+
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }finally {
+            DBUtil.close(preparedStatement);
+            DBUtil.close(connection);
+        }
+    }
+
+    @Override
+    public Page<User> pages() {
+        Connection connection = null;
+        PreparedStatement preparedStatement =null;
+        ResultSet resultSet =null;
+        String sql = "select * from t_user limit ?,?";
+        String sqlCount = "select count(*) from t_user";
+        List<User> users = new ArrayList<User>();
+        Page<User> pages = new Page<User>();
+        User user = null;
+        int pageIndex = SystemContext.getPageIndex();
+        int pageSize = SystemContext.getPageSize();
+        int start =(pageIndex - 1) *pageSize;
+        int totalRecord = 0;
+        try {
+            connection = DBUtil.getConnection();
+            preparedStatement =connection.prepareStatement(sqlCount);
+            resultSet =preparedStatement.executeQuery();
+            while (resultSet.next()){
+                totalRecord = resultSet.getInt(1);
+
+            }
+            //两次使用的ps这个参数 是因为事先声明了好了 preparedStateme =null；
+            preparedStatement  = connection.prepareStatement(sql);
+            //这有一定的问题啊！
+            preparedStatement.setInt(start, 1);
+            preparedStatement.setInt(pageSize,2);
+            resultSet = preparedStatement.executeQuery();
+            while (resultSet.next()){
+                user  = new User();
+                user.setId(resultSet.getInt("id"));
+                user.setUsername(resultSet.getString("username"));
+                user.setPassword(resultSet.getString("password"));
+                user.setNickname(resultSet.getString("nickname"));
+                user.setRole(resultSet.getInt("role"));
+                user.setStatus(resultSet.getInt("status"));
+                users.add(user);
+
+            }
+
+
+
+        } catch (Exception e) {
+            e.printStackTrace();
+        } finally {
+            DBUtil.close(resultSet);
+            DBUtil.close(preparedStatement);
+            DBUtil.close(connection);
+        }
+        int totalPage =(totalRecord -1)/pageSize+1;
+        pages.setPageSize(pageSize);
+        pages.setPageIndex(pageIndex);
+        pages.setTotalPage(totalPage);
+        pages.setTotalRecord(totalRecord);
+        pages.setDatas(users);
+        return pages;
+    }
+
 }

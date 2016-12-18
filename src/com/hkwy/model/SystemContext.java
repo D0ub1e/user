@@ -11,19 +11,23 @@ public class SystemContext {
      * 我没有写一个remove的方法
      * @return
      */
-    public static ThreadLocal<Integer> getPageSize() {
-        return pageSize;
+    public static  int getPageSize(){
+        return pageSize.get();
     }
-
-    public static void setPageSize(ThreadLocal<Integer> pageSize) {
-        SystemContext.pageSize = pageSize;
+    public static  void setPageSize(int _pageSize){
+        pageSize.set(_pageSize);
     }
-
-    public static ThreadLocal<Integer> getPageIndex() {
-        return pageIndex;
+    public static  void removePageSize(){
+        pageSize.remove();
     }
-
-    public static void setPageIndex(ThreadLocal<Integer> pageIndex) {
-        SystemContext.pageIndex = pageIndex;
+    //三种方法对象是PageIndex
+    public static  int getPageIndex(){
+        return pageIndex.get();
+    }
+    public static  void setPageIndex(int _pageIndex){
+        pageIndex.set(_pageIndex);
+    }
+    public static  void removePageIndex(){
+        pageIndex.remove();
     }
 }
