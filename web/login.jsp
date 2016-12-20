@@ -16,8 +16,8 @@
     </script>
 </head>
 <body>
-<h1 align="center">用户登录</h1>
 <br><br><br><br><br><br>
+<h1 align="center">用户登录</h1>
 <form action="<%=request.getContextPath()%>/user?method=login" method="post">
     <table align="center" border="1" width="500px">
         <tr>
@@ -34,6 +34,5 @@
         </tr>
     </table>
 </form>
-
 </body>
 </html>

@@ -20,6 +20,7 @@ public class DBUtil {
                 .getContextClassLoader().getResourceAsStream("db.properties");
         try {
             properties.load(inputStream);
+            driverName = properties.getProperty("driverName");
             url= properties.getProperty("url");
             username=properties.getProperty("username");
             password=properties.getProperty("password");
